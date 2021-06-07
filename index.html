@@ -7,8 +7,54 @@
     <title>
         Testing
     </title>
+
+    <style>
+        .chk {
+            border: thin solid red;
+        }
+        .d-none { 
+            display: none;
+        }
+        .d-100 {
+            height: 100%;
+            width: 100%;
+        }
+
+        .d-inline-block {
+            display: inline-block;
+        }
+
+        .choices {
+            border: thin solid gold;
+        }
+
+        .choices__item {
+            border: thin solid cyan;
+            cursor: pointer;
+        }
+
+        .content-wrapper {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     
+    <div class="choices">
+        <h4>Step 1 of 3</h4>
+        <h2>First, which products are you interested in?</h2>
+        <label for="casual-driver" class="chk d-inline-block choices__item">
+            <input type="checkbox" name="casual-driver" value="Casual Driver" class="d-none">
+            <div class="content-wrapper">
+                <figure>
+                    <img src="https://via.placeholder.com/46x46" alt="Casual Driver">
+                </figure>
+                <p>Casual Driver</p>
+            </div>
+        </label>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 </html>
